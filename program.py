@@ -1,7 +1,7 @@
 import socket
 import time
 import threading
-from tkinter import *
+from tkinter import*
 
 root=Tk()
 root.geometry("300x500")
@@ -58,7 +58,7 @@ def threadsendmessage():
 
 
 
-startchatimage=PhotoImage(file="start.png")
+startchatimage=PhotoImage(file='startchat.png')
 startimagebutton=Button(root,image=startchatimage,command=startmessagethread,borderwidth=0)
 startimagebutton.place(x=90,y=10)
 
@@ -68,7 +68,7 @@ listbox.place(x=15,y=80)
 messagebox=Entry(root,textvariable=StringVar(),font=("calibre",10,"normal"),border=2,width=32)
 messagebox.place(x=10,y=444)
 
-sendmessageimage=PhotoImage(file="send.png")
+sendmessageimage=PhotoImage(file='send.png')
 sendmessagebutton=Button(root,image=sendmessageimage,command=threadsendmessage,borderwidth=0)
 sendmessagebutton.place(x=260,y=440)
 
